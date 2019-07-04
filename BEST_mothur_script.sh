@@ -1,6 +1,10 @@
-#once you have create the file with the samples R1 and R2 (best.files in this case), you put both together.
-#Delta q is low so correction is very unlikely, and insert very high to avoid false inserts. 
-#Since the Fragment is small enough, you should reach the end, so trimoverlap will help cleaning
+#from the gz files from the illumina, create the stability file with the samples R1 and R2
+make.file(inputdir=./, type=gz, prefix=best)
+#you can edit the best.files file to put better names to the samples if the ones from illumina are too cryptic
+#read mothur instructions to understand the structure of the stability file.
+#Next step: make contigs - Delta q is low so correction is very unlikely (ambiguities will stay and be removed later)
+#insert very high to avoid false inserts. 
+#Since the Fragment is small enough, you should reach the end of the fragment, so trimoverlap will help cleaning
 make.contigs(file=best.files, deltaq=10, insert=30, trimoverlap=T, processors=40)
 summary.seqs(fasta=current)
 #remove reads with any ambiguity, and less than 160 bp - not real
