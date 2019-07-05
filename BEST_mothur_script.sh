@@ -48,8 +48,9 @@ get.current()
 quit()
 #after this, you have a fasta file with the reference sequence, and a count_table with the number of reads for each reference sequence.
 #Those refernce sequences are equivalent to SVA or mOTUs at 100% similarity. IDs can be obtained form GenBank, or using a dedicated
-#database create with the python scripts found in this repository, but then an extra step should be used to classify the sequences: #"classify.seqs(fasta=yourlastfasta, template=templatefasta, taxonomy=templatetaxonomu)"
-#include few other taxa (invertebrates, urochordata, mammalia, reptilia, etc) in the database, to be sure you flag all contaminants
-#and you will obtain a file with the hierarchical classification according with your database. 
+#database create with the python scripts found in this repository, but then an extra step should be used to classify the sequences: 
+#"classify.seqs(fasta=yourlastfasta, template=templatefasta, taxonomy=templatetaxonomy)".
+#Include few other taxa (invertebrates, urochordata, mammalia, reptilia, etc) in the database, to be sure you flag all contaminants.
+#You should obtain a file with the hierarchical classification according with your database. 
 #All tables can be used in any dedicated software (R, excel, Primer) for analyses
 #In case of doubt check Mothur manual. This pipeline was run in Mothur Ver. 1.42.2
