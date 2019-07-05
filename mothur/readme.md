@@ -1,1 +1,3 @@
-
+the script can be run in any system as <i> mothur BEST_mothur_script.sh</i> or steps can be pasted into a interactive folder. As it is, the same folder should contain the gz files and the reference fasta ShortRef.fas</p>
+As it is, it will not classify the sequences - additional steps should be done by BLAST or similar. Please see the python scripts in case you would like to create a mothur-like reference database from  a genbank query or from the fasta containing all representative sequences from your run.</p>
+Although developed for fish, these scripts are pretty standard and would obviously work in any other system.
