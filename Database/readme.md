@@ -1,4 +1,4 @@
-Python scripts to built a mothur-like reference database, with a fasta and a taxonomy files</n>
+Python scripts to built a mothur-like reference database, with a fasta and a taxonomy files</p>
 The <i>01_epost_fetch_sequences.py</i> script will allow to query NCBI website and download (in GeneBank format) the results from the query, in this case 12S.</p>
 The <i>02_extract_sequences_from_gb.py</i> script will allow to extract the fasta sequence from the downloaded genebank file, in a format that mothur will accept.</p>
 The <i>03_create_taxonomy.py</i> script extracts the hierarchical taxonomy info from the downloaded genebank file and creates a mothur-like taxonomy file. This will allow to have the hierarchical classification, allowing to study resuls at supraspecies level.</p>
